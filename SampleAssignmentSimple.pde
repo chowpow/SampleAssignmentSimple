@@ -7,6 +7,7 @@ int state, time, maxTime;
 void setup() {
   size(600, 600);
   state = 1;
+  time++;
   maxTime = 1000;
 }
 
@@ -31,9 +32,6 @@ void drawOutlineOfLights() {
   if (time > maxTime * 2) {
     state = 3;
   }
-  if (time > maxTime * 3) {
-    time = 0;
-  }
 
 }
 
@@ -51,6 +49,8 @@ void drawLights() {
   }
   if (state == 3) {
     fill(255, 0, 255);
+    fill(255, 0, 0);
     ellipse(width/2, height/2 - 65, 50, 50); //top
+    time = 0;
   }
 }
