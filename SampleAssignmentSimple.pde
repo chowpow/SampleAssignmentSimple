@@ -50,7 +50,7 @@ void drawLights() {
     ellipse(width/2, height/2, 50, 50); //middle
   }
   if (state == 3) {
-    fill(255, 0, 0);
+    fill(255, 0, 255);
     ellipse(width/2, height/2 - 65, 50, 50); //top
   }
 }
